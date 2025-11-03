@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhansetu - Bridging your Financial Goals</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c444f43472.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --primary: #003366;
+      --accent: #FFC300;
+      --light: #f8f9fa;
+      --dark: #212529;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .nav-logo img {
+      height: 40px;  /* adjust to match text height */
+      width: auto;
+    }
+
+    .navbar-brand .accent { color: var(--accent); }
+    .nav-link {
+      font-weight: 500;
+      color: var(--dark) !important;
+      transition: 0.3s;
+    }
+    .nav-link:hover { color: var(--primary) !important; }
+
+    /* Buttons */
+    .btn-primary-dhansetu, .btn-outline-dhansetu {
+      padding: 0.7rem 1.8rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: 0.3s ease-in-out;
+    }
+    .btn-primary-dhansetu {
+      background: var(--primary);
+      color: white;
+      border: none;
+    }
+    .btn-primary-dhansetu:hover {
+      background: #004080;
+      transform: translateY(-2px);
+    }
+    .btn-outline-dhansetu {
+      border: 2px solid var(--accent);
+      color: var(--accent);
+    }
+    .btn-outline-dhansetu:hover {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    /* Section spacing */
+    section { padding: 5rem 0; }
+    .bg-light-custom { background: var(--light); }
+
+    /* Hero */
+    #home {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #fefefe 0%, #eef3f9 100%);
+      text-align: center;
+    }
+    #home h1 {
+      font-weight: 800;
+      font-size: 3rem;
+      color: var(--dark);
+    }
+    #home .tagline {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Services */
+    .service-card {
+      border: none;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
+      transition: all 0.3s ease;
+      height: 100%;
+      background: white;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 51, 102, 0.15);
+    }
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    /* Form */
+    form .form-control {
+      border-radius: 0.5rem;
+      border: 1px solid #ced4da;
+      padding: 0.75rem 1rem;
+    }
+    form .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 0.15rem rgba(0, 51, 102, 0.2);
+    }
+    #formMessage {
+      font-weight: 600;
+      color: green;
+      transition: opacity 0.3s;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* Smooth scroll offset for sticky navbar */
+    html { scroll-padding-top: 80px; }
+
+    /* Animations */
+    .fade-in-up {
+      animation: fadeInUp 1s ease both;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+    <div class="container">
+      <div class="nav-logo">
+        <img src="dhansetu.jpg" alt="Firm Logo">
+        <a class="navbar-brand" href="#home">Dhansetu<span class="accent">.</span></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link mx-2" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link mx-2" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link mx-2" href="#services">Services</a></li>
+          <li class="nav-item"><a class="btn btn-outline-dhansetu ms-lg-3" href="#registration">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="fade-in-up">
+    <div class="container">
+      <p class="tagline">Bridging your Financial Goals</p>
+      <h1>Secure Your Future with <span style="color: var(--accent);">Expert Financial Planning</span></h1>
+      <p class="lead text-muted mt-3 mb-4">
+        Comprehensive budgeting, investments, and insurance solutions for professionals and small business owners.
+      </p>
+      <a href="#registration" class="btn btn-primary-dhansetu btn-lg">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-light-custom">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://placehold.co/600x400/003366/ffffff?text=Financial+Growth" alt="About Dhansetu" class="img-fluid rounded-3 shadow-lg">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3" style="color: var(--primary);">Who We Are</h2>
+          <p>Dhansetu is built on a single goal: making sound financial expertise accessible to everyone. We connect your current finances to your future ambitions.</p>
+          <p>Our team specializes in tailored financial planning for salaried professionals and small business owners — focusing on budgeting, investments, and risk management.</p>
+          <p>We prioritize trust, transparency, and results to help you make confident, informed decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3" style="color: var(--primary);">Our Services</h2>
+      <p class="lead text-muted mb-5">Comprehensive solutions to manage, grow, and protect your wealth.</p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4">
+            <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+            <h5 class="fw-bold" style="color: var(--primary);">Budget Planning</h5>
+            <p class="text-muted">Optimize income and expenses for smarter financial control and greater savings.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4">
+            <div class="icon-circle"><i class="fas fa-hand-holding-usd"></i></div>
+            <h5 class="fw-bold" style="color: var(--primary);">Investment Advisory</h5>
+            <p class="text-muted">Personalized strategies using Mutual Funds, SIPs, and long-term wealth growth plans.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4">
+            <div class="icon-circle"><i class="fas fa-university"></i></div>
+            <h5 class="fw-bold" style="color: var(--primary);">Loan Assistance</h5>
+            <p class="text-muted">Simplified loan facilitation for personal and business growth at best rates.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card p-4">
+            <div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+            <h5 class="fw-bold" style="color: var(--primary);">Insurance & Risk</h5>
+            <p class="text-muted">Comprehensive life, health, and general insurance for full financial security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section id="registration" class="bg-light-custom">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold mb-3" style="color: var(--accent);">Ready to Bridge Your Goals?</h2>
+        <p class="lead text-muted">Register for a free consultation with our financial experts.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card p-4 shadow border-0 rounded-4">
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-12">
+                  <input type="tel" class="form-control" placeholder="Phone (+91...)" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="4" placeholder="Briefly describe your inquiry..."></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary-dhansetu btn-lg w-75 mt-3">Submit & Connect</button>
+                  <div id="formMessage" class="mt-3 opacity-0">Thank you for registering! We'll contact you soon.</div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="text-center mt-5">
+            <h5 class="fw-bold mb-2" style="color: var(--primary);">Or Contact Us Directly</h5>
+            <p><i class="fas fa-phone-alt me-2" style="color: var(--accent);"></i> +91 9058432515</p>
+            <p><i class="fas fa-envelope me-2" style="color: var(--accent);"></i> dhanfinance2025@gmail.com</p>
+            <div class="mt-3">
+              <a href="https://www.twitter.com/dhansetu2025" target="_blank" class="text-decoration-none mx-2 fs-4" style="color: var(--primary);"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-decoration-none mx-2 fs-4 text-muted"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="text-decoration-none mx-2 fs-4 text-muted"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Dhansetu. All rights reserved.</p>
+      <p class="small mb-0">Bridging your Financial Goals.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('formMessage');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      msg.classList.remove('opacity-0');
+      msg.style.transition = 'opacity 0.3s';
+      msg.style.opacity = 1;
+
+      setTimeout(() => {
+        msg.style.opacity = 0;
+        form.reset();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
