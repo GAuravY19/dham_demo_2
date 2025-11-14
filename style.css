@@ -173,3 +173,91 @@ footer a:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+
+/* ---------------- MOBILE RESPONSIVENESS ---------------- */
+
+@media (max-width: 768px) {
+
+  /* Fix hero section spacing */
+  #home {
+    min-height: 70vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #home h1 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    padding: 0 1rem;
+  }
+
+  #home .tagline {
+    font-size: 0.9rem;
+  }
+
+  #home .lead {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  /* Buttons on mobile */
+  .btn-primary-dhansetu,
+  .btn-outline-dhansetu {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  /* NAVBAR FIX */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem !important;
+    padding: 8px 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    padding: 6px 8px;
+    font-size: 1rem;
+  }
+
+  /* Services cards spacing */
+  .service-card {
+    padding: 1.2rem;
+  }
+
+  .service-card h5 {
+    font-size: 1.05rem;
+  }
+
+  /* Register Page Fix */
+  #registration h2 {
+    font-size: 1.4rem;
+  }
+
+  #registration p.lead {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  form .form-control {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .card {
+    padding: 1.5rem !important;
+  }
+
+  /* Reduce section spacing */
+  section {
+    padding: 3rem 0;
+  }
+
+}
+
