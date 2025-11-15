@@ -208,10 +208,101 @@ footer a:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* ---------------- About page specific styles ---------------- */
+
+/* container card look for about boxes */
+.service-box {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.6rem;
+    box-shadow: 0 8px 28px rgba(0, 51, 102, 0.06);
+    text-align: left;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(0, 51, 102, 0.12);
+}
+
+/* icon circle - larger and left aligned for card */
+.service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, var(--accent), #ffb400);
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 6px 18px rgba(255, 195, 0, 0.15);
+}
+
+/* title + desc */
+.service-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.service-desc {
+    color: #536070;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    margin-bottom: 0.9rem;
+}
+
+/* small list inside card */
+.service-list {
+    padding-left: 1rem;
+    margin: 0;
+    color: #33475b;
+    font-size: 0.92rem;
+}
+
+.service-list li {
+    margin-bottom: 0.45rem;
+}
+
+/* about card styling */
+.about-card {
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 8px 28px rgba(0, 51, 102, 0.06);
+}
+
+/* Hero tweaks for about hero */
+#about-hero h2 {
+    font-size: 1.6rem;
+}
+
+#about-hero .lead {
+    font-size: 1rem;
+    color: #4b5870;
+}
+
+/* CTA */
+section.py-4 .btn-primary-dhansetu {
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-size: 1.05rem;
+}
+
+.mission-box {
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(0, 51, 102, 0.06);
+    border-left: 6px solid var(--accent);
+}
 
 /* ---------------- MOBILE RESPONSIVENESS ---------------- */
 
-/* @media (max-width: 768px) { */
+/* MOBILE: fine-tune layout */
 @media only screen and (max-width: 768px) {
 
     /* Fix hero section spacing */
@@ -300,5 +391,67 @@ footer a:hover {
         padding: 2.5rem 0 !important;
     }
 
+    .service-box {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
 
+    .service-title {
+        font-size: 1rem;
+    }
+
+    #about-hero {
+        padding-top: 2rem;
+        padding-bottom: 1.6rem;
+    }
+
+    #about-hero h2 {
+        font-size: 1.4rem;
+    }
+
+    #about-hero .lead {
+        font-size: 0.98rem;
+        padding: 0 1rem;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.05rem;
+    }
+
+    .service-title {
+        font-size: 0.98rem;
+    }
+
+    .service-desc {
+        font-size: 0.92rem;
+    }
+
+    .why-item {
+        font-size: 0.95rem;
+    }
+
+    /* stack service boxes vertically on smaller screens with good spacing */
+    #about-services .col-md-6 {
+        margin-bottom: 0.6rem;
+    }
+
+    #about-services .col-md-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .about-card {
+        padding: 1rem;
+    }
+
+    /* Reduce overall section padding on mobile */
+    section {
+        padding: 2.2rem 0;
+    }
+
+    #about-mission h3 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
 }
