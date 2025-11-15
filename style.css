@@ -353,6 +353,151 @@ section.py-4 .btn-primary-dhansetu {
     box-shadow: 0 10px 26px rgba(0, 51, 102, 0.12);
 }
 
+
+/* Price badge */
+.price-badge {
+    background: var(--accent);
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* Feature list */
+.feature-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 1.3rem 1.6rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 51, 102, 0.08);
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-top: 4px;
+}
+
+.feature-box h5 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.feature-box p {
+    margin: 0;
+    color: #4a5568;
+}
+
+/* Worth section cards */
+.worth-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 51, 102, 0.08);
+}
+
+.worth-icon {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.module-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 10px 28px rgba(0, 51, 102, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 14px 32px rgba(0, 51, 102, 0.12);
+}
+
+.module-icon {
+    background: var(--accent);
+    color: var(--primary);
+    font-size: 1.4rem;
+    min-width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-card h5 {
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.module-card p {
+    font-size: 0.94rem;
+    line-height: 1.45;
+}
+
+/* Premium Ultra Card */
+.ultra-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border-top: 5px solid var(--accent);
+    box-shadow: 0 12px 30px rgba(0, 51, 102, 0.10);
+    transition: all 0.3s ease-in-out;
+    min-height: 240px;
+}
+
+.ultra-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 51, 102, 0.20);
+}
+
+/* Icon Style */
+.ultra-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+/* Titles */
+.ultra-card h5 {
+    color: var(--primary);
+}
+
+.btn-faq-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-faq-outline:hover {
+    background: var(--primary);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 51, 102, 0.25);
+    transform: translateY(-3px);
+}
+
 /* ---------------- MOBILE RESPONSIVENESS ---------------- */
 
 /* MOBILE: fine-tune layout */
@@ -531,5 +676,30 @@ section.py-4 .btn-primary-dhansetu {
 
     .faq-card p {
         font-size: 0.9rem;
+    }
+
+    .module-card {
+        padding: 1.1rem !important;
+    }
+
+    .module-icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .module-card p {
+        font-size: 0.9rem;
+    }
+
+    .ultra-card {
+        min-height: auto;
+        padding: 1.4rem !important;
+    }
+
+    .ultra-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 1.3rem;
     }
 }
