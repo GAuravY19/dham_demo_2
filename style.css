@@ -300,6 +300,23 @@ section.py-4 .btn-primary-dhansetu {
     border-left: 6px solid var(--accent);
 }
 
+/* Budget Page: hero spacing */
+#budget-hero h2 {
+    font-size: 1.7rem;
+}
+
+#budget-hero h4 {
+    font-size: 1.3rem;
+}
+
+/* Mission box reused */
+.mission-box {
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0px 8px 28px rgba(0, 51, 102, 0.06);
+    border-left: 6px solid var(--accent);
+}
+
 /* ---------------- MOBILE RESPONSIVENESS ---------------- */
 
 /* MOBILE: fine-tune layout */
@@ -453,5 +470,18 @@ section.py-4 .btn-primary-dhansetu {
     #about-mission h3 {
         margin-top: 1rem;
         font-size: 1.3rem;
+    }
+
+    #budget-hero h2 {
+        font-size: 1.4rem;
+    }
+
+    #budget-hero h4 {
+        font-size: 1.15rem;
+    }
+
+    #budget-hero .lead {
+        font-size: 0.95rem;
+        padding: 0 1rem;
     }
 }
