@@ -317,6 +317,42 @@ section.py-4 .btn-primary-dhansetu {
     border-left: 6px solid var(--accent);
 }
 
+
+
+/* FAQ Section Styling */
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem 1.8rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 8px 22px rgba(0, 51, 102, 0.08);
+    border-left: 5px solid var(--accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-card h5 {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.faq-card p {
+    margin: 0;
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.faq-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(0, 51, 102, 0.12);
+}
+
 /* ---------------- MOBILE RESPONSIVENESS ---------------- */
 
 /* MOBILE: fine-tune layout */
@@ -483,5 +519,17 @@ section.py-4 .btn-primary-dhansetu {
     #budget-hero .lead {
         font-size: 0.95rem;
         padding: 0 1rem;
+    }
+
+    .faq-card {
+        padding: 1.2rem 1.3rem;
+    }
+
+    .faq-card h5 {
+        font-size: 1rem;
+    }
+
+    .faq-card p {
+        font-size: 0.9rem;
     }
 }
