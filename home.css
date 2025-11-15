@@ -1,0 +1,149 @@
+/* --------------------------------------------------
+   PREMIUM HOME HERO (SPACIOUS + MODERN)
+-------------------------------------------------- */
+
+.hero-modern {
+  background: linear-gradient(135deg, #f9fcff 0%, #eef4f9 40%, #e3edf7 100%);
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  border-radius: 0 0 40px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hero-expanded {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Tagline */
+.hero-text .tagline {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+/* Heading */
+.hero-heading {
+  font-size: 3.1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1a1a1a;
+}
+
+.hero-heading .highlight {
+  color: var(--accent);
+}
+
+/* Subtitle */
+.hero-sub {
+  margin-top: 1.2rem;
+  margin-bottom: 2.2rem;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  max-width: 500px;
+}
+
+/* Benefits Row */
+.hero-benefits {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.hb {
+  background: #ffffff;
+  padding: 0.55rem 1.3rem;
+  border-radius: 40px;
+  font-weight: 600;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.hb i {
+  color: var(--accent);
+}
+
+/* CTA Button */
+.btn-hero-start {
+  padding: 0.9rem 2.3rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.05rem;
+  box-shadow: 0 10px 25px rgba(0, 51, 102, 0.25);
+  transition: 0.3s ease;
+}
+
+.btn-hero-start:hover {
+  background: #004080;
+  transform: translateY(-3px);
+}
+
+/* Illustration */
+.hero-illustration {
+  max-width: 85%;
+  filter: drop-shadow(0px 18px 40px rgba(0,0,0,0.15));
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Subtle floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-benefits {
+  display: flex;
+  justify-content: center;   /* center alignment */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-hero-start {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+/* --------------------------------------------------
+   MOBILE RESPONSIVENESS
+-------------------------------------------------- */
+@media (max-width: 768px) {
+
+  .hero-modern {
+    padding: 4rem 1rem 6rem 1rem;
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 2.1rem;
+  }
+
+  .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-benefits {
+    justify-content: center;
+  }
+
+  .hero-illustration {
+    max-width: 80%;
+    margin-top: 3rem;
+  }
+}
