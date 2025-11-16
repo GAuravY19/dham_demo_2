@@ -1,6 +1,26 @@
 /* --------------------------------------------------
    PREMIUM HOME HERO (SPACIOUS + MODERN)
 -------------------------------------------------- */
+:root {
+    --primary: #003366;
+    --accent: #FFC300;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
 
 .hero-modern {
   background: linear-gradient(135deg, #f9fcff 0%, #eef4f9 40%, #e3edf7 100%);
