@@ -142,7 +142,7 @@ body {
 /* --------------------------------------------------
    MOBILE RESPONSIVENESS
 -------------------------------------------------- */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   .hero-modern {
     padding: 4rem 1rem 6rem 1rem;
