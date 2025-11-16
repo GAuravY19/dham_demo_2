@@ -580,120 +580,129 @@ body {
 
 
 .hero-modern {
-  background: linear-gradient(135deg, #f9fcff 0%, #eef4f9 40%, #e3edf7 100%);
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  border-radius: 0 0 40px 40px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(135deg, #f9fcff 0%, #eef4f9 40%, #e3edf7 100%);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .hero-expanded {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 /* Tagline */
 .hero-text .tagline {
-  font-size: 1.2rem;
-  color: var(--primary);
-  font-weight: 600;
-  margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
 }
 
 /* Heading */
 .hero-heading {
-  font-size: 3.1rem;
-  font-weight: 800;
-  line-height: 1.25;
-  color: #1a1a1a;
+    font-size: 3.1rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #1a1a1a;
 }
 
 .hero-heading .highlight {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 /* Subtitle */
 .hero-sub {
-  margin-top: 1.2rem;
-  margin-bottom: 2.2rem;
-  font-size: 1.1rem;
-  color: #4a4a4a;
-  max-width: 500px;
+    margin-top: 1.2rem;
+    margin-bottom: 2.2rem;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    max-width: 500px;
 }
 
 /* Benefits Row */
 .hero-benefits {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .hb {
-  background: #ffffff;
-  padding: 0.55rem 1.3rem;
-  border-radius: 40px;
-  font-weight: 600;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 0.55rem 1.3rem;
+    border-radius: 40px;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
 }
 
 .hb i {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 /* CTA Button */
 .btn-hero-start {
-  padding: 0.9rem 2.3rem;
-  background: var(--primary);
-  color: white;
-  border-radius: 50px;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.05rem;
-  box-shadow: 0 10px 25px rgba(0, 51, 102, 0.25);
-  transition: 0.3s ease;
+    padding: 0.9rem 2.3rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.05rem;
+    box-shadow: 0 10px 25px rgba(0, 51, 102, 0.25);
+    transition: 0.3s ease;
 }
 
 .btn-hero-start:hover {
-  background: #004080;
-  transform: translateY(-3px);
+    background: #004080;
+    transform: translateY(-3px);
 }
 
 /* Illustration */
 .hero-illustration {
-  max-width: 85%;
-  filter: drop-shadow(0px 18px 40px rgba(0,0,0,0.15));
-  animation: float 4s ease-in-out infinite;
+    max-width: 85%;
+    filter: drop-shadow(0px 18px 40px rgba(0, 0, 0, 0.15));
+    animation: float 4s ease-in-out infinite;
 }
 
 /* Subtle floating animation */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 
 .hero-text {
-  text-align: center;
+    text-align: center;
 }
 
 .hero-benefits {
-  display: flex;
-  justify-content: center;   /* center alignment */
-  gap: 1rem;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /* center alignment */
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn-hero-start {
-  display: inline-block;
-  margin-top: 1.5rem;
+    display: inline-block;
+    margin-top: 1.5rem;
 }
 
 
@@ -911,60 +920,81 @@ body {
         height: 48px;
     }
 
-    /* 1. Stack: Image ABOVE Text */
-  .hero-container .row {
+    /* Reset layout and center everything */
+  .mobile-hero .row {
     display: flex;
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse;
+    align-items: center;
     text-align: center;
+    gap: 1.5rem;
   }
 
-  /* 2. Fix spacing */
-  .hero-text {
-    margin-top: 2rem;
+  /* Illustration at the top */
+  .mobile-hero .hero-illustration {
+    max-width: 88%;
+    margin: 0 auto;
+    display: block;
+    filter: drop-shadow(0px 10px 25px rgba(0,0,0,0.15));
   }
 
-  .hero-heading {
-    font-size: 1.9rem !important;
+  /* Tagline */
+  .mobile-hero .tagline {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* Main heading — reduced + tighter */
+  .mobile-hero .hero-heading {
+    font-size: 1.85rem !important;
     line-height: 1.3;
-    margin-bottom: 1rem;
+    margin-top: 0.8rem;
   }
 
-  .highlight {
+  .mobile-hero .hero-heading .highlight {
     display: inline-block;
   }
 
-  .hero-sub {
-    font-size: 1rem;
-    margin: 1rem auto 2rem auto;
+  /* Subheading */
+  .mobile-hero .hero-sub {
+    font-size: 0.95rem;
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.45;
   }
 
-  .hero-benefits {
+  /* Pills row */
+  .mobile-hero .hero-benefits {
     justify-content: center;
     gap: 0.6rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
   }
 
-  .hb {
-    padding: 0.55rem 1.2rem;
-    font-size: 0.9rem;
+  .mobile-hero .hb {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 40px;
+    background: white;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
   }
 
-  .btn-hero-start {
+  /* CTA button (center + clean look) */
+  .mobile-hero .btn-hero-start {
     font-size: 1rem;
-    padding: 0.8rem 2rem;
-    margin-top: 1.2rem !important;
+    width: 70%;
+    max-width: 260px;
+    padding: 0.9rem 1.2rem;
+    border-radius: 50px;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
   }
 
-  /* 3. Resize the illustration on mobile */
-  .hero-illustration {
-    max-width: 85%;
-    margin: 0 auto 1.5rem auto !important;
-  }
-
-  /* Reduce overall hero padding */
-  .hero-modern {
-    padding-top: 3rem !important;
-    padding-bottom: 4rem !important;
+  /* Reduce overall section padding */
+  .mobile-hero.hero-modern {
+    padding-top: 2.5rem !important;
+    padding-bottom: 3rem !important;
+    border-radius: 0 0 30px 30px;
   }
 }
